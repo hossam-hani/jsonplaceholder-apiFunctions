@@ -5,6 +5,7 @@ import 'services/todo_services.dart';
 import 'services/photos_services.dart';
 import 'services/albums_services.dart';
 import 'services/comments_services.dart';
+import 'services/posts_services.dart';
 
 void main() async{
   runApp(App());
@@ -13,10 +14,12 @@ void main() async{
   // var userslist = await getUsers();
   var albums = await getAlbums();
   var comments = await getComments();
+  var posts = await getPosts();
   print(todos[1].title);
   print(photos[1].url);
   print('title : ${albums[6].title} and id : ${albums[6].id}');
   print('body : ${comments[1].body}');
+  print('post Title : ${posts[1].title}');
 }
 
 
